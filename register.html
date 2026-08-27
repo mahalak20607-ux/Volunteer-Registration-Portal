@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Register | VolunteerHub</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================================
+     NAVIGATION
+================================ -->
+
+<header class="navbar">
+
+    <a href="index.html" class="brand">
+
+        <span>V</span>
+
+        VolunteerHub
+
+    </a>
+
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="events.html">
+            Opportunities
+        </a>
+
+        <a href="about.html">
+            About
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+        <a href="register.html"
+           class="nav-btn">
+            Join Now
+        </a>
+
+    </nav>
+
+
+    <button class="menu-btn"
+            aria-label="Open menu">
+
+        ☰
+
+    </button>
+
+</header>
+
+
+
+<!-- ================================
+     MAIN CONTENT
+================================ -->
+
+<main class="register-page">
+
+
+    <!-- PAGE TITLE -->
+
+    <section class="page-title">
+
+        <div class="eyebrow">
+            GET INVOLVED
+        </div>
+
+        <h1>
+            Become a volunteer
+        </h1>
+
+        <p>
+            Tell us a little about yourself
+            and start making a difference.
+        </p>
+
+    </section>
+
+
+
+    <!-- ================================
+         REGISTRATION AREA
+    ================================= -->
+
+    <section class="form-shell">
+
+
+        <!-- ================================
+             REGISTRATION FORM
+        ================================= -->
+
+        <div class="form-card">
+
+            <h2>
+                Volunteer Registration
+            </h2>
+
+            <p class="muted">
+                Fields marked with * are required.
+            </p>
+
+
+            <form id="registerForm">
+
+
+                <!-- NAME + EMAIL -->
+
+                <div class="form-grid">
+
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your full name"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address *
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="you@example.com"
+                            required>
+
+                    </div>
+
+
+
+                    <!-- PHONE + AGE -->
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number *
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="10-digit phone number"
+                            maxlength="10"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="age">
+                            Age *
+                        </label>
+
+                        <input
+                            type="number"
+                            id="age"
+                            min="16"
+                            max="100"
+                            placeholder="Your age"
+                            required>
+
+                    </div>
+
+
+
+                    <!-- GENDER + AVAILABILITY -->
+
+                    <div class="form-group">
+
+                        <label for="gender">
+                            Gender
+                        </label>
+
+                        <select id="gender">
+
+                            <option value="">
+                                Select gender
+                            </option>
+
+                            <option value="Female">
+                                Female
+                            </option>
+
+                            <option value="Male">
+                                Male
+                            </option>
+
+                            <option value="Prefer not to say">
+                                Prefer not to say
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="availability">
+                            Availability
+                        </label>
+
+                        <select id="availability">
+
+                            <option value="">
+                                Select availability
+                            </option>
+
+                            <option value="Weekdays">
+                                Weekdays
+                            </option>
+
+                            <option value="Weekends">
+                                Weekends
+                            </option>
+
+                            <option value="Both">
+                                Both
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- INTEREST -->
+
+                    <div class="form-group full">
+
+                        <label for="interest">
+                            Area of Interest *
+                        </label>
+
+                        <select id="interest"
+                                required>
+
+                            <option value="">
+                                Choose an area
+                            </option>
+
+                            <option value="Environment">
+                                Environment
+                            </option>
+
+                            <option value="Community Care">
+                                Community Care
+                            </option>
+
+                            <option value="Education">
+                                Education
+                            </option>
+
+                            <option value="Health & Wellness">
+                                Health & Wellness
+                            </option>
+
+                            <option value="Animal Welfare">
+                                Animal Welfare
+                            </option>
+
+                            <option value="Disaster Relief">
+                                Disaster Relief
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- SKILLS -->
+
+                    <div class="form-group full">
+
+                        <label for="skills">
+                            Skills
+                        </label>
+
+                        <input
+                            type="text"
+                            id="skills"
+                            placeholder="Example: Teaching, Design, Event Management">
+
+                    </div>
+
+
+
+                    <!-- ADDRESS -->
+
+                    <div class="form-group full">
+
+                        <label for="address">
+                            Address
+                        </label>
+
+                        <textarea
+                            id="address"
+                            rows="4"
+                            placeholder="Enter your city or address"></textarea>
+
+                    </div>
+
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="form-group">
+
+                        <label for="password">
+                            Password *
+                        </label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            minlength="6"
+                            placeholder="Minimum 6 characters"
+                            required>
+
+                    </div>
+
+
+                    <!-- CONFIRM PASSWORD -->
+
+                    <div class="form-group">
+
+                        <label for="confirmPassword">
+                            Confirm Password *
+                        </label>
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            minlength="6"
+                            placeholder="Re-enter password"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- TERMS -->
+
+                <label class="check">
+
+                    <input
+                        type="checkbox"
+                        id="terms"
+                        required>
+
+                    <span>
+                        I agree to participate responsibly
+                        and provide accurate information.
+                    </span>
+
+                </label>
+
+
+
+                <!-- SUBMIT -->
+
+                <button
+                    type="submit"
+                    class="btn primary full-btn">
+
+                    Create Volunteer Account →
+
+                </button>
+
+
+                <!-- MESSAGE -->
+
+                <p
+                    id="formMessage"
+                    class="form-message">
+                </p>
+
+
+                <!-- LOGIN -->
+
+                <p class="login-note">
+
+                    Already registered?
+
+                    <a href="login.html">
+                        Login here
+                    </a>
+
+                </p>
+
+
+            </form>
+
+        </div>
+
+
+
+        <!-- ================================
+             SIDE INFORMATION
+        ================================= -->
+
+        <aside class="side-panel">
+
+
+            <div class="big-icon">
+                🤝
+            </div>
+
+
+            <h2>
+                Be part of something meaningful.
+            </h2>
+
+
+            <p>
+                Your contribution, however small,
+                can create a lasting impact in
+                someone's life.
+            </p>
+
+
+            <ul>
+
+                <li>
+                    Discover local opportunities
+                </li>
+
+                <li>
+                    Track your volunteer activities
+                </li>
+
+                <li>
+                    Connect with community initiatives
+                </li>
+
+                <li>
+                    Build valuable experience
+                </li>
+
+            </ul>
+
+
+        </aside>
+
+
+    </section>
+
+</main>
+
+
+
+<!-- ================================
+     FOOTER
+================================ -->
+
+<footer>
+
+    <div>
+
+        <strong>
+            VolunteerHub
+        </strong>
+
+        <p>
+            Connecting people with purpose.
+        </p>
+
+    </div>
+
+
+    <div>
+
+        <p>
+            © 2026 VolunteerHub.
+            All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="js/register.js"></script>
+
+<script src="js/script.js"></script>
+
+
+</body>
+
+</html>

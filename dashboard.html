@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | VolunteerHub</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================================
+     NAVIGATION
+================================ -->
+
+<header class="navbar">
+
+    <a href="index.html" class="brand">
+
+        <span>V</span>
+
+        VolunteerHub
+
+    </a>
+
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="events.html">
+            Opportunities
+        </a>
+
+        <a href="about.html">
+            About
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+        <button
+            id="logoutBtn"
+            class="nav-logout">
+
+            Logout
+
+        </button>
+
+    </nav>
+
+
+    <button class="menu-btn"
+            aria-label="Open menu">
+
+        ☰
+
+    </button>
+
+</header>
+
+
+
+<!-- ================================
+     DASHBOARD
+================================ -->
+
+<main class="dashboard-page">
+
+
+    <!-- ================================
+         WELCOME
+    ================================= -->
+
+    <section class="dashboard-welcome">
+
+        <div>
+
+            <div class="eyebrow">
+                VOLUNTEER DASHBOARD
+            </div>
+
+            <h1>
+                Welcome back,
+                <span id="welcomeName">
+                    Volunteer
+                </span>!
+            </h1>
+
+            <p>
+                Thank you for being part of a community
+                that creates positive change.
+            </p>
+
+        </div>
+
+
+        <a href="events.html"
+           class="btn primary">
+
+            Find Opportunities →
+
+        </a>
+
+    </section>
+
+
+
+    <!-- ================================
+         STATISTICS
+    ================================= -->
+
+    <section class="dashboard-stats">
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                🤝
+            </div>
+
+            <div>
+
+                <span>
+                    Registered
+                </span>
+
+                <strong id="registeredCount">
+                    0
+                </strong>
+
+                <small>
+                    Opportunities
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                🌱
+            </div>
+
+            <div>
+
+                <span>
+                    Interest
+                </span>
+
+                <strong
+                    id="interestValue">
+
+                    —
+
+                </strong>
+
+                <small>
+                    Selected area
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                📅
+            </div>
+
+            <div>
+
+                <span>
+                    Availability
+                </span>
+
+                <strong
+                    id="availabilityValue">
+
+                    —
+
+                </strong>
+
+                <small>
+                    Volunteer time
+                </small>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ================================
+         DASHBOARD GRID
+    ================================= -->
+
+    <section class="dashboard-grid">
+
+
+        <!-- ================================
+             PROFILE
+        ================================= -->
+
+        <div class="dashboard-card profile-card">
+
+            <div class="card-heading">
+
+                <div>
+
+                    <div class="eyebrow">
+                        YOUR PROFILE
+                    </div>
+
+                    <h2>
+                        Volunteer information
+                    </h2>
+
+                </div>
+
+                <div class="profile-avatar"
+                     id="profileAvatar">
+
+                    V
+
+                </div>
+
+            </div>
+
+
+            <div class="profile-details">
+
+
+                <div class="profile-row">
+
+                    <span>
+                        Full Name
+                    </span>
+
+                    <strong
+                        id="profileName">
+
+                        —
+
+                    </strong>
+
+                </div>
+
+
+                <div class="profile-row">
+
+                    <span>
+                        Email
+                    </span>
+
+                    <strong
+                        id="profileEmail">
+
+                        —
+
+                    </strong>
+
+                </div>
+
+
+                <div class="profile-row">
+
+                    <span>
+                        Phone
+                    </span>
+
+                    <strong
+                        id="profilePhone">
+
+                        —
+
+                    </strong>
+
+                </div>
+
+
+                <div class="profile-row">
+
+                    <span>
+                        Age
+                    </span>
+
+                    <strong
+                        id="profileAge">
+
+                        —
+
+                    </strong>
+
+                </div>
+
+
+                <div class="profile-row">
+
+                    <span>
+                        Skills
+                    </span>
+
+                    <strong
+                        id="profileSkills">
+
+                        —
+
+                    </strong>
+
+                </div>
+
+
+                <div class="profile-row">
+
+                    <span>
+                        Address
+                    </span>
+
+                    <strong
+                        id="profileAddress">
+
+                        —
+
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================================
+             REGISTERED EVENTS
+        ================================= -->
+
+        <div class="dashboard-card registered-card">
+
+            <div class="card-heading">
+
+                <div>
+
+                    <div class="eyebrow">
+                        MY ACTIVITIES
+                    </div>
+
+                    <h2>
+                        Registered opportunities
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="registeredEvents"
+                class="registered-events">
+
+                <!-- JavaScript loads events -->
+
+            </div>
+
+
+            <a href="events.html"
+               class="outline-btn">
+
+                Explore More Opportunities
+
+            </a>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ================================
+         MOTIVATION
+    ================================= -->
+
+    <section class="dashboard-quote">
+
+        <div class="quote-symbol">
+            “
+        </div>
+
+        <div>
+
+            <h2>
+                Your time can change someone's life.
+            </h2>
+
+            <p>
+                Every volunteer hour contributes to
+                a stronger, kinder and more connected
+                community.
+            </p>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- ================================
+     FOOTER
+================================ -->
+
+<footer>
+
+    <div>
+
+        <strong>
+            VolunteerHub
+        </strong>
+
+        <p>
+            Connecting people with purpose.
+        </p>
+
+    </div>
+
+
+    <div>
+
+        <p>
+            © 2026 VolunteerHub.
+            All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- ================================
+     JAVASCRIPT
+================================ -->
+
+<script src="js/dashboard.js"></script>
+
+<script src="js/script.js"></script>
+
+
+</body>
+
+</html>
